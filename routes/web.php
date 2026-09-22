@@ -6,7 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/planeten', function () {
+Route::get('/planets', function () {
     return [
         "Uranus",
         "Jupiter",
