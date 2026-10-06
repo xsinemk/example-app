@@ -9,7 +9,12 @@
 <h1>Planeten</h1>
 
 @foreach ($planeten as $planeet)
-    <h2>{{ $planeet['name'] }}</h2>
+    <h2>
+        <a href="/planets/{{ strtolower($planeet['name']) }}">
+            {{ $planeet['name'] }}
+        </a>
+    </h2>
+
     <p>{{ $planeet['description'] }}</p>
 @endforeach
 
