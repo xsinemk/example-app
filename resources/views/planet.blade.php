@@ -10,7 +10,7 @@
 
 <p>{{ $planet['description'] }}</p>
 
-<a href="/planets">Terug naar alle planeten</a>
+<a href="{{ route('home') }}">Terug naar home</a>
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
 
 @foreach ($planeten as $planeet)
     <h2>
-        <a href="/planets/{{ strtolower($planeet['name']) }}">
+        <a href="{{ route('planets.show', ['planet' => strtolower($planeet['name'])]) }}">
             {{ $planeet['name'] }}
         </a>
     </h2>
